@@ -1,0 +1,2604 @@
+<!DOCTYPE html>
+<html lang="id" data-bs-theme="light">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Website Resmi Pemerintah Provinsi Sulawesi Selatan</title>
+
+    <!-- Meta Description and Keywords -->
+    <meta name="description" content="Website resmi Pemerintah Provinsi Sulawesi Selatan - Profil, Potensi Daerah, Informasi Publik, dan Layanan Pemerintahan">
+    <meta name="keywords" content="Sulawesi Selatan, Pemerintah Provinsi, Sulsel, Makassar, Potensi Daerah, Informasi Publik">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:title" content="Pemerintah Provinsi Sulawesi Selatan">
+    <meta name="twitter:description" content="Website resmi Pemerintah Provinsi Sulawesi Selatan">
+    <meta name="twitter:image" content="https://id.wikipedia.org/wiki/Lambang_Sulawesi_Selatan">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pemerintah Provinsi Sulawesi Selatan">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sulselprov.go.id">
+    <meta property="og:image" content="https://sulselprov.go.id/Image/logo-200.png">
+    <meta property="og:description" content="Website resmi Pemerintah Provinsi Sulawesi Selatan">
+    <meta property="og:site_name" content="Sulawesi Selatan">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        :root {
+            --bs-primary: #2b66bf;
+            --bs-secondary: #000;
+            --bs-success: #198754;
+            --bs-info: #0dcaf0;
+            --bs-warning: #ffc107;
+            --bs-danger: #dc3545;
+            --bs-light: #f8f9fa;
+            --bs-dark: #1b1b1b;
+            --bs-primary-rgb: 43, 102, 191;
+        }
+
+        /* Custom Variables */
+        .bg-primary {
+            background-color: var(--bs-primary) !important;
+        }
+        
+        .text-primary {
+            color: var(--bs-primary) !important;
+        }
+        
+        .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+        }
+        
+        .btn-primary:hover {
+            background-color: #1a4a8f;
+            border-color: #1a4a8f;
+        }
+
+        /* Dashboard Layout */
+        .sidebar {
+            background: linear-gradient(180deg, var(--bs-primary) 0%, #1a4a8f 100%);
+            color: white;
+            min-height: 100vh;
+            position: sticky;
+            top: 0;
+        }
+
+        .sidebar .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 20px;
+            border-left: 4px solid transparent;
+            transition: all 0.3s;
+            margin-bottom: 5px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .sidebar .nav-link:hover,
+        .sidebar .nav-link.active {
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            border-left-color: white;
+        }
+
+        .sidebar .nav-link i {
+            width: 24px;
+            margin-right: 10px;
+        }
+
+        /* Main Content */
+        .main-content {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Cards */
+        .stats-card {
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .stats-card .card-body {
+            padding: 25px;
+        }
+
+        .stats-card .icon-wrapper {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(43, 102, 191, 0.9), rgba(43, 102, 191, 0.8)), 
+                        url('https://upload.wikimedia.org/wikipedia/commons/5/5e/Makassar_Skyline.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 0;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* Profile Sections */
+        .profile-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            border-bottom: 2px solid var(--bs-primary);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            color: var(--bs-primary);
+        }
+
+        /* Region Cards */
+        .region-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .region-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .region-card img {
+            height: 200px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        /* Tabs */
+        .custom-tabs .nav-tabs {
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .custom-tabs .nav-link {
+            border: none;
+            color: #6c757d;
+            font-weight: 500;
+            padding: 12px 24px;
+            text-decoration: none;
+            background: none;
+            cursor: pointer;
+        }
+
+        .custom-tabs .nav-link.active {
+            color: var(--bs-primary);
+            border-bottom: 3px solid var(--bs-primary);
+            background: transparent;
+        }
+
+        /* Quick Stats */
+        .stat-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .stat-item .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--bs-primary);
+            margin-bottom: 10px;
+        }
+
+        /* Table Styles */
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: rgba(43, 102, 191, 0.05);
+        }
+
+        /* Navbar Custom */
+        .navbar-brand {
+            font-weight: 600;
+        }
+
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                min-height: auto;
+                position: static;
+            }
+            
+            .main-content {
+                padding: 15px;
+            }
+            
+            .hero-section {
+                padding: 40px 0;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        /* Content Sections */
+        .content-section {
+            display: none;
+        }
+        
+        .content-section.active {
+            display: block;
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        /* Modal Custom */
+        .modal-body img {
+            max-height: 300px;
+            object-fit: cover;
+            width: 100%;
+        }
+        
+        .tourist-spot {
+            padding: 10px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--bs-primary);
+            background-color: #f8f9fa;
+            border-radius: 0 5px 5px 0;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="images/logosulsel.png" alt="Logo Sulsel" height="50" class="me-3">
+                <div>
+                    <h5 class="mb-0">PEMERINTAH PROVINSI</h5>
+                    <h6 class="mb-0 fw-bold">SULAWESI SELATAN</h6>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home" onclick="showSection('home')">
+                            <i class="bi bi-house-door"></i> Beranda
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile" onclick="showSection('profile')">
+                            <i class="bi bi-info-circle"></i> Tentang
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            <i class="bi bi-telephone"></i> Kontak
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid flex-grow-1">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-lg-2 col-md-3 p-0">
+                <div class="sidebar">
+                    <div class="p-4">
+                        <h5 class="text-center mb-4">MENU NAVIGASI</h5>
+                        <nav class="nav flex-column">
+                            <a class="nav-link active" href="#home" onclick="showSection('home')">
+                                <i class="bi bi-house"></i> Beranda
+                            </a>
+                            <a class="nav-link" href="#profile" onclick="showSection('profile')">
+                                <i class="bi bi-person-badge"></i> Profil
+                            </a>
+                            <a class="nav-link" href="#ragam-info" onclick="showSection('ragam-info')">
+                                <i class="bi bi-newspaper"></i> Ragam Informasi
+                            </a>
+                            <a class="nav-link" href="#potensi" onclick="showSection('potensi')">
+                                <i class="bi bi-gem"></i> Potensi Daerah
+                            </a>
+                            <a class="nav-link" href="#kabupaten" onclick="showSection('kabupaten')">
+                                <i class="bi bi-building"></i> Kabupaten/Kota
+                            </a>
+                            <a class="nav-link" href="#ppdi" onclick="showSection('ppdi')">
+                                <i class="bi bi-database"></i> PPDI
+                            </a>
+                            <a class="nav-link" href="#aksi-ppk" onclick="showSection('aksi-ppk')">
+                                <i class="bi bi-gear"></i> AKSI PPK
+                            </a>
+                            <a class="nav-link" href="#ipkd" onclick="showSection('ipkd')">
+                                <i class="bi bi-bar-chart"></i> IPKD
+                            </a>
+                        </nav>
+                        
+                        <hr class="bg-light my-4">
+                        
+                        <div class="text-center">
+                            <small class="text-light opacity-75">Selamat Datang di</small>
+                            <h6 class="mt-2">Portal Resmi</h6>
+                            <h5 class="fw-bold">Sulawesi Selatan</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-lg-10 col-md-9 p-0">
+                <div class="main-content">
+                    <!-- Home Content -->
+                    <div id="home" class="content-section active">
+                        <!-- Hero Section -->
+                        <div class="hero-section text-center">
+                            <h1 class="display-4 fw-bold mb-3">SELAMAT DATANG</h1>
+                            <h2 class="mb-4">DI PORTAL RESMI PEMERINTAH PROVINSI SULAWESI SELATAN</h2>
+                            <p class="lead mb-4">"Sulawesi Selatan Unggul, Sejahtera, dan Berkeadilan"</p>
+                            <a href="#profile" class="btn btn-light btn-lg" onclick="showSection('profile')">
+                                <i class="bi bi-info-circle me-2"></i> Pelajari Lebih Lanjut
+                            </a>
+                        </div>
+
+                        <!-- Quick Stats -->
+                        <div class="row mb-5">
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="number">24</div>
+                                    <div>Kabupaten/Kota</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="number">8.9 JT</div>
+                                    <div>Jumlah Penduduk</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="number">46.717</div>
+                                    <div>Luas Wilayah (km²)</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 mb-4">
+                                <div class="stat-item">
+                                    <div class="number">14</div>
+                                    <div>Suku Bangsa</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Peta Wilayah -->
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-map me-2"></i>Peta Wilayah Sulawesi Selatan
+                            </h3>
+                            <div class="text-center">
+                                <img src="images/4184064725.webp" 
+                                     alt="Peta Sulawesi Selatan" 
+                                     class="img-fluid rounded border" 
+                                     style="max-height: 400px;">
+                            </div>
+                        </div>
+
+                        <!-- Profil Singkat -->
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-info-circle me-2"></i>Profil Singkat Provinsi
+                            </h3>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <p class="lead">Sulawesi Selatan adalah salah satu provinsi di Indonesia yang terletak di ujung selatan Pulau Sulawesi dengan ibu kota Makassar.</p>
+                                    
+                                    <div class="row mt-4">
+                                        <div class="col-md-6">
+                                            <h5><i class="bi bi-geo-alt text-primary me-2"></i>Letak Geografis</h5>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-caret-right-fill text-primary me-2"></i>Utara: Sulawesi Barat & Tengah</li>
+                                                <li><i class="bi bi-caret-right-fill text-primary me-2"></i>Selatan: Laut Flores</li>
+                                                <li><i class="bi bi-caret-right-fill text-primary me-2"></i>Timur: Teluk Bone</li>
+                                                <li><i class="bi bi-caret-right-fill text-primary me-2"></i>Barat: Selat Makassar</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h5><i class="bi bi-star text-primary me-2"></i>Keunggulan</h5>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Gerbang Indonesia Timur</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Lumbung Padi Nasional</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Destinasi Wisata Budaya</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Potensi Maritim Besar</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card border-primary">
+                                        <div class="card-header bg-primary text-white">
+                                            <h5 class="mb-0"><i class="bi bi-award me-2"></i>Fakta Menarik</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="text-center mb-3">
+                                                <img src="images/download.png" 
+                                                     alt="Lambang Sulsel" class="img-fluid" style="max-height: 150px;">
+                                            </div>
+                                            <p class="card-text">Lambang "Toddo Puli" berarti tekad dan keyakinan yang kuat dalam membangun daerah.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Berita Terbaru -->
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-newspaper me-2"></i>Berita Terbaru
+                            </h3>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <span class="badge bg-primary mb-2">Pembangunan</span>
+                                            <h6 class="card-title">Pembangunan Infrastruktur Jalan Tersambung 95%</h6>
+                                            <p class="card-text small">Target pembangunan jalan provinsi tahun 2024 hampir tercapai...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <span class="badge bg-success mb-2">Ekonomi</span>
+                                            <h6 class="card-title">Pertumbuhan Ekonomi Sulsel Capai 6.8%</h6>
+                                            <p class="card-text small">Tertinggi se-Indonesia Timur pada kuartal III 2024...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-4">
+                                    <div class="card h-100">
+                                        <div class="card-body">
+                                            <span class="badge bg-info mb-2">Pendidikan</span>
+                                            <h6 class="card-title">Beasiswa Pendidikan Diteruskan untuk 10.000 Siswa</h6>
+                                            <p class="card-text small">Program beasiswa untuk siswa berprestasi dari keluarga kurang mampu...</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Profile Content -->
+                    <div id="profile" class="content-section">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <!-- Visi Misi -->
+                                <div class="profile-section">
+                                    <h3 class="profile-header">
+                                        <i class="bi bi-bullseye me-2"></i>Visi dan Misi
+                                    </h3>
+                                    <div class="mb-4">
+                                        <h4 class="text-primary mb-3">Visi</h4>
+                                        <div class="alert alert-primary">
+                                            <h5 class="alert-heading">"Sulawesi Selatan Unggul, Sejahtera, dan Berkeadilan"</h5>
+                                        </div>
+                                    </div>
+                                    
+                                    <h4 class="text-primary mb-3">Misi</h4>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card h-100 border-primary">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-primary">Misi 1</h5>
+                                                    <p class="card-text">Meningkatkan kualitas sumber daya manusia yang berdaya saing dan berkarakter</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card h-100 border-primary">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-primary">Misi 2</h5>
+                                                    <p class="card-text">Memperkuat infrastruktur dan konektivitas untuk mendukung pertumbuhan ekonomi</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card h-100 border-primary">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-primary">Misi 3</h5>
+                                                    <p class="card-text">Mengembangkan ekonomi berbasis potensi lokal yang berkelanjutan</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <div class="card h-100 border-primary">
+                                                <div class="card-body">
+                                                    <h5 class="card-title text-primary">Misi 4</h5>
+                                                    <p class="card-text">Mewujudkan tata kelola pemerintahan yang baik dan bersih</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Struktur Organisasi -->
+                                <div class="profile-section">
+                                    <h3 class="profile-header">
+                                        <i class="bi bi-diagram-3 me-2"></i>Struktur Organisasi
+                                    </h3>
+                                    <div class="text-center">
+                                        <div class="mb-4">
+                                            <div class="p-4 bg-primary text-white rounded mb-2">
+                                                <h5 class="mb-0">GUBERNUR</h5>
+                                                <small>H. Andi Sudirman Sulaiman</small>
+                                            </div>
+                                            
+                                            <div class="row justify-content-center mt-4">
+                                                <div class="col-md-6">
+                                                    <div class="p-3 bg-info text-white rounded mb-2">
+                                                        <h6 class="mb-0">WAKIL GUBERNUR</h6>
+                                                        <small>Fatmawati Rusdi</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="row justify-content-center mt-4">
+                                                <div class="col-md-4">
+                                                    <div class="p-3 bg-success text-white rounded mb-2">
+                                                        <h6 class="mb-0">SEKRETARIS DAERAH</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="p-3 bg-success text-white rounded mb-2">
+                                                        <h6 class="mb-0">ASISTEN 1</h6>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="p-3 bg-success text-white rounded mb-2">
+                                                        <h6 class="mb-0">ASISTEN 2</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <!-- Profil Pemimpin -->
+                                <div class="profile-section">
+                                    <h3 class="profile-header">
+                                        <i class="bi bi-person-badge me-2"></i>Profil Pemimpin
+                                    </h3>
+                                    <div class="text-center mb-4">
+                                        <img src="images/download.jpg" 
+                                             class="img-fluid rounded-circle border border-4 border-primary mb-3" 
+                                             alt="Gubernur" style="width: 200px; height: 200px; object-fit: cover;">
+                                        <h4>Gubernur</h4>
+                                        <h5 class="text-primary">H. Andi Sudirman Sulaiman</h5>
+                                        <p class="text-muted">Periode 2024-2029</p>
+                                    </div>
+                                    
+                                    <h5 class="text-primary">
+                                        <i class="bi bi-list-task me-2"></i>Tugas dan Fungsi
+                                    </h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex">
+                                            <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                                            <span>Memimpin penyelenggaraan pemerintahan daerah</span>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                                            <span>Membina dan mengawasi penyelenggaraan pemerintahan</span>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                                            <span>Mengajukan rancangan Peraturan Daerah</span>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                                            <span>Menyusun dan mengajukan rancangan APBD</span>
+                                        </li>
+                                        <li class="list-group-item d-flex">
+                                            <i class="bi bi-check-circle-fill text-primary me-2 mt-1"></i>
+                                            <span>Mewakili daerah di dalam dan di luar pengadilan</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Data Kepegawaian -->
+                                <div class="profile-section">
+                                    <h3 class="profile-header">
+                                        <i class="bi bi-people me-2"></i>Data Kepegawaian
+                                    </h3>
+                                    <div class="table-responsive">
+                                        <table class="table table-sm">
+                                            <thead class="table-primary">
+                                                <tr>
+                                                    <th>Jenis Pegawai</th>
+                                                    <th class="text-end">Jumlah</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>PNS</td>
+                                                    <td class="text-end">25,430</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PPPK</td>
+                                                    <td class="text-end">3,850</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Honorer</td>
+                                                    <td class="text-end">7,720</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pegawai Kontrak</td>
+                                                    <td class="text-end">2,000</td>
+                                                </tr>
+                                                <tr class="table-active">
+                                                    <td><strong>Total</strong></td>
+                                                    <td class="text-end"><strong>39,000</strong></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ragam Informasi Content -->
+                    <div id="ragam-info" class="content-section">
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-newspaper me-2"></i>Ragam Informasi
+                            </h3>
+                            
+                            <ul class="nav nav-tabs" id="infoTab">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#artikel">
+                                        <i class="bi bi-file-text me-2"></i>Artikel
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#gubernur">
+                                        <i class="bi bi-person-square me-2"></i>Gubernur
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#dinas">
+                                        <i class="bi bi-building me-2"></i>Dinas
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            <div class="tab-content p-4 border border-top-0 rounded-bottom">
+                                <!-- Artikel -->
+                                <div class="tab-pane fade show active" id="artikel">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <img src="images/sidang-putusan-praperadilan-irman-yasin-limpo-dan-a-pahlevi-dalam-perkara-dugaan-penipuan-rp-50-miliar-elmayantidetiksulsel-1767761614561_169.jpeg" class="card-img-top" alt="Artikel" style="height: 200px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <h6> Praperadilan Irman YL dikabulkan hakim, status tersangka tidak sah!</h6>
+                                                    <p class="small">Putusan praperadilan itu dibacakan oleh Hakim Tunggal Angeliky Handayani di Ruang Sidang Bagir Manan, Pengadilan Negeri (PN) Makassar, Rabu (7/1/2025).</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <img src="images/ketua-dprd-soppeng-andi-muhammad-farid-1767501581794_169.jpeg" class="card-img-top" alt="Artikel" style="height: 200px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <h6> Sikap arogan ketua DPRD Soppeng ajak damai kabid BKPSDM tapi dengan ancaman </h6>
+                                                    <p class="small">"Melalui kuasa hukumnya meminta agar masalah penganiayaan ini agar diselesaikan secara bijak. Namun demikian kami melihat permintaan itu sangatlah jauh dari kata bijak, justru yang ada nada ancaman,"</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card h-100">
+                                                <img src="images/ketua-komisi-1-dprd-soppeng-andi-takdir-memimpin-rdp-dengan-bkpsdm-soal-penempatan-pppk-paruh-waktu-1767769087808_169.jpeg" class="card-img-top" alt="Artikel" style="height: 200px; object-fit: cover;">
+                                                <div class="card-body">
+                                                    <h6>Komisi I Evaluasi Penempatan PPPK Picu Ketua DPRD Soppeng Aniaya Kabid BKPSDM</h6>
+                                                    <p class="small">RDP berlangsung di Kantor DPRD Soppeng pada Rabu (7/1) sejak pukul 13.00 Wita. Rapat yang dipimpin Ketua Komisi I DPRD Soppeng itu turut dihadiri Kabid BKPSDM Soppeng.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Gubernur -->
+                                <div class="tab-pane fade" id="gubernur">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="images/download.jpg" class="img-fluid rounded" alt="Gubernur" style="height: 300px; object-fit: cover;">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4>Profil Gubernur Sulawesi Selatan</h4>
+                                            <p>Sudirman Sulaiman lahir dan menghabiskan masa remajanya di Dusun Bakunge, Desa Mappesangka, Kec. Ponre, Kabupaten Bone. Ia lahir pada 25 September 1983. Andi Sudirman merupakan anak ke-11 dari 12 bersaudara. Ayahnya adalah anggota TNI sekaligus seorang petani, sedangkan ibunya adalah seorang ibu rumah tangga (IRT).</p>
+                                            <h5 class="mt-4">Jadwal Kegiatan</h5>
+                                            <div class="list-group">
+                                                <div class="list-group-item">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>Rapat Koordinasi</span>
+                                                        <small>08:00 - 10:00</small>
+                                                    </div>
+                                                </div>
+                                                <div class="list-group-item">
+                                                    <div class="d-flex justify-content-between">
+                                                        <span>Kunjungan Kerja</span>
+                                                        <small>10:30 - 15:00</small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Dinas -->
+                                <div class="tab-pane fade" id="dinas">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-book me-2"></i>Dinas Pendidikan
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-heart-pulse me-2"></i>Dinas Kesehatan
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-tools me-2"></i>Dinas PUPR
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-building me-2"></i>Dinas Perindustrian
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-shop me-2"></i>Dinas Perdagangan
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-airplane me-2"></i>Dinas Pariwisata
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-tree me-2"></i>Dinas Kehutanan
+                                                </a>
+                                                <a href="#" class="list-group-item list-group-item-action">
+                                                    <i class="bi bi-droplet me-2"></i>Dinas Perikanan
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Potensi Daerah Content -->
+                    <div id="potensi" class="content-section">
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-gem me-2"></i>Potensi Daerah Sulawesi Selatan
+                            </h3>
+                            <p class="lead mb-4">Sulawesi Selatan memiliki berbagai potensi alam yang menjadi tulang punggung perekonomian daerah.</p>
+                            
+                            <div class="row">
+                                <!-- Pertambangan -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card stats-card">
+                                        <div class="card-body">
+                                            <div class="icon-wrapper bg-warning">
+                                                <i class="bi bi-minecart text-white" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <h5 class="card-title">Pertambangan</h5>
+                                            <p class="card-text">Cadangan nikel, bijih besi, emas, dan marmer</p>
+                                            <div class="progress mb-2" style="height: 10px;">
+                                                <div class="progress-bar bg-warning" style="width: 85%"></div>
+                                            </div>
+                                            <ul class="list-unstyled small">
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Nikel: 2,4 milyar ton</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Bijih Besi: 100 juta ton</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Emas: Potensi besar di Luwu</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Kelautan dan Perikanan -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card stats-card">
+                                        <div class="card-body">
+                                            <div class="icon-wrapper bg-info">
+                                                <i class="bi bi-water text-white" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <h5 class="card-title">Kelautan dan Perikanan</h5>
+                                            <p class="card-text">Potensi perikanan tangkap 1,2 juta ton/tahun</p>
+                                            <div class="progress mb-2" style="height: 10px;">
+                                                <div class="progress-bar bg-info" style="width: 75%"></div>
+                                            </div>
+                                            <ul class="list-unstyled small">
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Rumput Laut: Produsen terbesar nasional</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Perikanan Budidaya: 500.000 ton/tahun</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Garaman: 50.000 hektar</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pertanian -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card stats-card">
+                                        <div class="card-body">
+                                            <div class="icon-wrapper bg-success">
+                                                <i class="bi bi-tree text-white" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <h5 class="card-title">Pertanian</h5>
+                                            <p class="card-text">Lumbung padi nasional dengan produksi 5 juta ton/tahun</p>
+                                            <div class="progress mb-2" style="height: 10px;">
+                                                <div class="progress-bar bg-success" style="width: 90%"></div>
+                                            </div>
+                                            <ul class="list-unstyled small">
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Padi: 1,2 juta hektar sawah</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Jagung: 800.000 ton/tahun</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Kedelai: 150.000 ton/tahun</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Perkebunan -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card stats-card">
+                                        <div class="card-body">
+                                            <div class="icon-wrapper bg-success">
+                                                <i class="bi bi-tree-fill text-white" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <h5 class="card-title">Perkebunan</h5>
+                                            <p class="card-text">Kakao, kelapa sawit, cengkeh, dan vanili</p>
+                                            <div class="progress mb-2" style="height: 10px;">
+                                                <div class="progress-bar bg-success" style="width: 80%"></div>
+                                            </div>
+                                            <ul class="list-unstyled small">
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Kakao: 300.000 hektar</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Kelapa Sawit: 400.000 hektar</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cengkeh: 50.000 hektar</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Peternakan -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card stats-card">
+                                        <div class="card-body">
+                                            <div class="icon-wrapper bg-danger">
+                                                <i class="bi bi-egg-fried text-white" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <h5 class="card-title">Peternakan</h5>
+                                            <p class="card-text">Sapi, kerbau, kambing, dan unggas</p>
+                                            <div class="progress mb-2" style="height: 10px;">
+                                                <div class="progress-bar bg-danger" style="width: 70%"></div>
+                                            </div>
+                                            <ul class="list-unstyled small">
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Sapi: 1,2 juta ekor</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Kerbau: 350.000 ekor</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ungas: 25 juta ekor</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Kehutanan -->
+                                <div class="col-md-6 mb-4">
+                                    <div class="card stats-card">
+                                        <div class="card-body">
+                                            <div class="icon-wrapper bg-success">
+                                                <i class="bi bi-tree text-white" style="font-size: 1.5rem;"></i>
+                                            </div>
+                                            <h5 class="card-title">Kehutanan</h5>
+                                            <p class="card-text">Hutan produksi dan konservasi seluas 2,1 juta hektar</p>
+                                            <div class="progress mb-2" style="height: 10px;">
+                                                <div class="progress-bar bg-success" style="width: 65%"></div>
+                                            </div>
+                                            <ul class="list-unstyled small">
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hutan Produksi: 1,5 juta ha</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hutan Lindung: 400.000 ha</li>
+                                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Hasil Hutan: Rotan, kayu, damar</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+<!-- Kabupaten/Kota Content -->
+<div id="kabupaten" class="content-section">
+    <div class="profile-section">
+        <h3 class="profile-header">
+            <i class="bi bi-building me-2"></i>Kabupaten dan Kota di Sulawesi Selatan
+        </h3>
+        <p class="lead mb-4">Sulawesi Selatan terdiri dari 24 kabupaten/kota dengan keunikan dan potensi masing-masing.</p>
+        
+        <div class="row">
+            <!-- Kota Makassar -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/download (1).jpg" 
+                         class="card-img-top" 
+                         alt="Kota Makassar">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-primary">Kota</span>
+                            <span class="badge bg-info ms-1">Ibu Kota</span>
+                        </div>
+                        <h5 class="card-title">Kota Makassar</h5>
+                        <p class="card-text flex-grow-1">Ibu kota provinsi dengan pelabuhan terbesar di Indonesia Timur dan pusat perdagangan regional.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 1.5 juta jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 175.77 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#makassarModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kota Palopo -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/download (2).jpg" 
+                         class="card-img-top" 
+                         alt="Kota Palopo">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-primary">Kota</span>
+                            <span class="badge bg-success ms-1">Pegunungan</span>
+                        </div>
+                        <h5 class="card-title">Kota Palopo</h5>
+                        <p class="card-text flex-grow-1">Kota di kawasan pegunungan dengan udara sejuk dan panorama alam yang indah.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 180 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 247.52 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#palopoModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kota Parepare -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/download (3).jpg" 
+                         class="card-img-top" 
+                         alt="Kota Parepare">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-primary">Kota</span>
+                            <span class="badge bg-info ms-1">Pelabuhan</span>
+                        </div>
+                        <h5 class="card-title">Kota Parepare</h5>
+                        <p class="card-text flex-grow-1">Kota pelabuhan penting di pesisir barat Sulawesi Selatan dengan panorama Teluk Parepare.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 150 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 99.33 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#parepareModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Bantaeng -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/download (4).jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Bantaeng">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-warning ms-1">Pariwisata</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Bantaeng</h5>
+                        <p class="card-text flex-grow-1">Daerah dengan pantai yang indah dan pertanian yang subur.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 190 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 395.83 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#bantaengModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Barru -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/download (5).jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Barru">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-info ms-1">Pesisir</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Barru</h5>
+                        <p class="card-text flex-grow-1">Wilayah pesisir dengan potensi perikanan dan pariwisata bahari.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 170 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.174 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#barruModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Bone -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/images.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Bone">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-success ms-1">Pertanian</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Bone</h5>
+                        <p class="card-text flex-grow-1">Lumbung padi Sulawesi Selatan dengan sawah terluas dan produksi beras tertinggi.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 850 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 4.559 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#boneModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Bulukumba -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/bulukumba.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Bulukumba">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-primary ms-1">Kapal Phinisi</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Bulukumba</h5>
+                        <p class="card-text flex-grow-1">Pembuat kapal tradisional Phinisi yang terkenal hingga mancanegara.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 430 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.155 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#bulukumbaModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Enrekang -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/enrekang.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Enrekang">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-warning ms-1">Pegunungan</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Enrekang</h5>
+                        <p class="card-text flex-grow-1">Kawasan pegunungan dengan panorama alam yang memukau.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 240 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.786 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#enrekangModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Gowa -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/gowa.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Gowa">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-warning ms-1">Sejarah</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Gowa</h5>
+                        <p class="card-text flex-grow-1">Kawasan industri dan pendidikan dengan sejarah Kerajaan Gowa yang megah.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 750 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.883 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#gowaModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Jeneponto -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/jeneponto.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Jeneponto">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-success ms-1">Pertanian</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Jeneponto</h5>
+                        <p class="card-text flex-grow-1">Sentra produksi padi dan jagung dengan lahan pertanian yang luas.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 410 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 749.79 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#jenepontoModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Kepulauan Selayar -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/selayar.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Kepulauan Selayar">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-info ms-1">Kepulauan</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Kepulauan Selayar</h5>
+                        <p class="card-text flex-grow-1">Gugusan pulau dengan keindahan bawah laut dan pantai pasir putih.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 140 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.357 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#selayarModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Luwu -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/luwu.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Luwu">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-warning ms-1">Pertambangan</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Luwu</h5>
+                        <p class="card-text flex-grow-1">Kawasan dengan potensi tambang nikel dan perkebunan kakao yang besar.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 380 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 3.000 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#luwuModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Luwu Timur -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/luwu timur.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Luwu Timur">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-warning ms-1">Nikel</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Luwu Timur</h5>
+                        <p class="card-text flex-grow-1">Daerah dengan cadangan nikel terbesar di Indonesia.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 320 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 6.944 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#luwutimurModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Luwu Utara -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/luwu utara.jpeg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Luwu Utara">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-success ms-1">Perkebunan</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Luwu Utara</h5>
+                        <p class="card-text flex-grow-1">Sentra perkebunan kakao dan kelapa sawit di Sulawesi Selatan.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 360 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 7.502 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#luwuutaraModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Maros -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/maros.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Maros">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-info ms-1">Karst</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Maros</h5>
+                        <p class="card-text flex-grow-1">Kawasan karst dengan Taman Nasional Bantimurung dan industri semen terbesar.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 400 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.619 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#marosModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Pangkajene dan Kepulauan (Pangkep) -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/pangkajene.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Pangkep">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-info ms-1">Kepulauan</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Pangkep</h5>
+                        <p class="card-text flex-grow-1">Wilayah dengan gugusan pulau kecil yang indah dan potensi perikanan.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 350 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.112 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#pangkepModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Pinrang -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/pinrang.jpeg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Pinrang">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-success ms-1">Sawah</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Pinrang</h5>
+                        <p class="card-text flex-grow-1">Daerah agraris dengan sawah yang subur dan produksi beras yang tinggi.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 410 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.961 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#pinrangModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Sidenreng Rappang (Sidrap) -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/sidenreng.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Sidrap">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-success ms-1">Beras</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Sidrap</h5>
+                        <p class="card-text flex-grow-1">Penghasil beras terbesar di Sulawesi Selatan dengan sistem irigasi yang baik.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 320 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.883 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#sidrapModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Sinjai -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/sinjai.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Sinjai">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-info ms-1">Teluk</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Sinjai</h5>
+                        <p class="card-text flex-grow-1">Wilayah dengan teluk yang indah dan pertanian yang produktif.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 260 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 819.96 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#sinjaiModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Soppeng -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/soppeng.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Soppeng">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-primary ms-1">Sutera</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Soppeng</h5>
+                        <p class="card-text flex-grow-1">Sentra produksi sutera alam terbesar di Indonesia Timur.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 240 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.359 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#soppengModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Takalar -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/takallar.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Takalar">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-info ms-1">Rumput Laut</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Takalar</h5>
+                        <p class="card-text flex-grow-1">Produsen rumput laut terbesar di Indonesia dengan kualitas ekspor.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 300 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 566.51 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#takalarModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Tana Toraja -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/toraja.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Tana Toraja">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-danger ms-1">Wisata</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Tana Toraja</h5>
+                        <p class="card-text flex-grow-1">Destinasi wisata budaya internasional dengan rumah adat Tongkonan dan upacara Rambu Solo.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 280 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 2.054 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#torajaModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Toraja Utara -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/toraja utara.jpeg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Toraja Utara">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-danger ms-1">Budaya</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Toraja Utara</h5>
+                        <p class="card-text flex-grow-1">Pemekaran dari Tana Toraja dengan kekayaan budaya dan alam yang sama indahnya.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 250 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 1.151 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#torajautaraModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kabupaten Wajo -->
+            <div class="col-md-4 mb-4">
+                <div class="card region-card h-100">
+                    <img src="images/wajo.jpg" 
+                         class="card-img-top" 
+                         alt="Kabupaten Wajo">
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-2">
+                            <span class="badge bg-success">Kabupaten</span>
+                            <span class="badge bg-success ms-1">Perairan</span>
+                        </div>
+                        <h5 class="card-title">Kabupaten Wajo</h5>
+                        <p class="card-text flex-grow-1">Wilayah dengan danau Tempe yang terkenal dan kehidupan nelayan tradisional.</p>
+                        <div class="mt-3">
+                            <small class="text-muted d-block">
+                                <i class="bi bi-people"></i> 460 ribu jiwa
+                            </small>
+                            <small class="text-muted d-block">
+                                <i class="bi bi-geo-alt"></i> Luas: 2.504 km²
+                            </small>
+                        </div>
+                        <a href="#" class="btn btn-sm btn-outline-primary mt-3" data-bs-toggle="modal" data-bs-target="#wajoModal">
+                            <i class="bi bi-info-circle"></i> Detail & Wisata
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <!-- PPDI Content -->
+                    <div id="ppdi" class="content-section">
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-database me-2"></i>Pusat Pengelolaan Data dan Informasi (PPDI)
+                            </h3>
+                            <p class="lead">PPDI merupakan unit yang bertanggung jawab dalam pengelolaan data dan informasi pemerintah daerah.</p>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-6">
+                                    <h5 class="text-primary mb-3">Fungsi Utama:</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="bi bi-arrow-right-circle-fill text-primary me-3"></i>
+                                            <span>Pengumpulan dan validasi data daerah</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="bi bi-arrow-right-circle-fill text-primary me-3"></i>
+                                            <span>Pengelolaan basis data terpadu</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="bi bi-arrow-right-circle-fill text-primary me-3"></i>
+                                            <span>Analisis data untuk perencanaan pembangunan</span>
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="bi bi-arrow-right-circle-fill text-primary me-3"></i>
+                                            <span>Publikasi statistik daerah</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-primary mb-3">Sistem Terkait:</h5>
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span>Sistem Informasi Geografis (SIG)</span>
+                                                <i class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span>Data Terbuka Daerah</span>
+                                                <i class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span>Statistik Daerah Online</span>
+                                                <i class="bi bi-chevron-right"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h5 class="text-primary mb-3">Layanan PPDI:</h5>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center h-100 border-primary">
+                                        <div class="card-body">
+                                            <i class="bi bi-database display-5 text-primary mb-3"></i>
+                                            <h5 class="card-title">Data Terbuka</h5>
+                                            <p class="card-text">Akses data publik secara terbuka untuk penelitian dan pengembangan</p>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Akses Data</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center h-100 border-primary">
+                                        <div class="card-body">
+                                            <i class="bi bi-bar-chart display-5 text-primary mb-3"></i>
+                                            <h5 class="card-title">Statistik Daerah</h5>
+                                            <p class="card-text">Data statistik terkini untuk perencanaan dan evaluasi pembangunan</p>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Lihat Statistik</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <div class="card text-center h-100 border-primary">
+                                        <div class="card-body">
+                                            <i class="bi bi-file-earmark-text display-5 text-primary mb-3"></i>
+                                            <h5 class="card-title">Publikasi</h5>
+                                            <p class="card-text">Laporan dan publikasi resmi pemerintah daerah</p>
+                                            <a href="#" class="btn btn-outline-primary btn-sm">Unduh Publikasi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AKSI PPK Content -->
+                    <div id="aksi-ppk" class="content-section">
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-gear me-2"></i>AKSelerasi Penyelenggaraan Pemerintahan Kabupaten/Kota (AKSI PPK)
+                            </h3>
+                            <p class="lead">Program akselerasi untuk meningkatkan kapasitas penyelenggaraan pemerintahan di tingkat kabupaten/kota.</p>
+                            
+                            <div class="alert alert-info">
+                                <h5 class="alert-heading"><i class="bi bi-info-circle me-2"></i>Tujuan Program:</h5>
+                                <ol class="mb-0">
+                                    <li>Meningkatkan kapasitas SDM pemerintahan daerah</li>
+                                    <li>Mempercepat pelayanan publik</li>
+                                    <li>Meningkatkan akuntabilitas pemerintahan</li>
+                                    <li>Memperkuat tata kelola keuangan daerah</li>
+                                </ol>
+                            </div>
+                            
+                            <h5 class="text-primary mt-4 mb-3">Indikator Kinerja:</h5>
+                            <div class="table-responsive">
+                                <table class="table table-hover table-bordered">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Indikator</th>
+                                            <th>Target 2024</th>
+                                            <th>Pencapaian Q3</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Efisiensi Pelayanan Publik</td>
+                                            <td>80%</td>
+                                            <td>75%</td>
+                                            <td><span class="badge bg-warning">Dalam Proses</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Kapasitas SDM Aparatur</td>
+                                            <td>90%</td>
+                                            <td>85%</td>
+                                            <td><span class="badge bg-warning">Dalam Proses</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Akuntabilitas Kinerja</td>
+                                            <td>85%</td>
+                                            <td>80%</td>
+                                            <td><span class="badge bg-warning">Dalam Proses</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Transparansi Anggaran</td>
+                                            <td>95%</td>
+                                            <td>92%</td>
+                                            <td><span class="badge bg-success">Tercapai</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <h5 class="text-primary mb-3">Kabupaten/Kota Terbaik:</h5>
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span>1. Kabupaten Gowa</span>
+                                                <span class="badge bg-primary rounded-pill">Nilai: 92</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span>2. Kabupaten Maros</span>
+                                                <span class="badge bg-primary rounded-pill">Nilai: 89</span>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="d-flex justify-content-between align-items-center">
+                                                <span>3. Kota Makassar</span>
+                                                <span class="badge bg-primary rounded-pill">Nilai: 88</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5 class="text-primary mb-3">Progress Program:</h5>
+                                    <div class="progress mb-3" style="height: 20px;">
+                                        <div class="progress-bar bg-success" style="width: 75%">75%</div>
+                                    </div>
+                                    <p class="small text-muted">Program telah berjalan 9 bulan dari target 12 bulan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IPKD Content -->
+                    <div id="ipkd" class="content-section">
+                        <div class="profile-section">
+                            <h3 class="profile-header">
+                                <i class="bi bi-bar-chart me-2"></i>Indeks Penyelenggaraan Pemerintahan Daerah (IPKD)
+                            </h3>
+                            <p class="lead">Sistem pengukuran kinerja penyelenggaraan pemerintahan daerah secara komprehensif.</p>
+                            
+                            <div class="row mb-4">
+                                <div class="col-md-3">
+                                    <div class="card text-center border-primary">
+                                        <div class="card-body">
+                                            <h2 class="display-4 text-primary fw-bold">85.6</h2>
+                                            <p class="text-muted mb-0">Tata Kelola Pemerintahan</p>
+                                            <small class="text-success"><i class="bi bi-arrow-up"></i> +2.5 dari 2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center border-primary">
+                                        <div class="card-body">
+                                            <h2 class="display-4 text-primary fw-bold">82.3</h2>
+                                            <p class="text-muted mb-0">Pelayanan Publik</p>
+                                            <small class="text-success"><i class="bi bi-arrow-up"></i> +3.1 dari 2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center border-primary">
+                                        <div class="card-body">
+                                            <h2 class="display-4 text-primary fw-bold">88.1</h2>
+                                            <p class="text-muted mb-0">Pengelolaan Keuangan</p>
+                                            <small class="text-success"><i class="bi bi-arrow-up"></i> +1.8 dari 2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card text-center border-primary">
+                                        <div class="card-body">
+                                            <h2 class="display-4 text-primary fw-bold">79.8</h2>
+                                            <p class="text-muted mb-0">Akuntabilitas</p>
+                                            <small class="text-warning"><i class="bi bi-arrow-right"></i> +0.5 dari 2023</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <h5 class="text-primary mb-3">Perbandingan dengan Provinsi Lain:</h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Peringkat</th>
+                                            <th>Provinsi</th>
+                                            <th>IPKD</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="table-success">
+                                            <td>1</td>
+                                            <td><strong>Sulawesi Selatan</strong></td>
+                                            <td><strong>85.6</strong></td>
+                                            <td><span class="badge bg-success">Terbaik di Sulawesi</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Sulawesi Utara</td>
+                                            <td>82.1</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Gorontalo</td>
+                                            <td>78.9</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Sulawesi Tenggara</td>
+                                            <td>77.5</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-8">
+                                    <h5 class="text-primary mb-3">Tren IPKD Sulsel 5 Tahun Terakhir:</h5>
+                                    <div class="text-center">
+                                        <img src="https://via.placeholder.com/800x400.png?text=Grafik+Tren+IPKD+Sulawesi+Selatan+2020-2024" 
+                                             class="img-fluid rounded border" alt="Tren IPKD">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5 class="text-primary mb-3">Rekomendasi Perbaikan:</h5>
+                                    <div class="list-group">
+                                        <div class="list-group-item list-group-item-warning">
+                                            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                            <span>Meningkatkan transparansi anggaran</span>
+                                        </div>
+                                        <div class="list-group-item list-group-item-warning">
+                                            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                            <span>Mempercepat pelayanan perizinan</span>
+                                        </div>
+                                        <div class="list-group-item list-group-item-warning">
+                                            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                                            <span>Meningkatkan partisipasi masyarakat</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="bi bi-geo-alt me-2"></i>Kontak Kami</h5>
+                    <p class="mb-2">
+                        <i class="bi bi-geo-alt-fill me-2"></i>Jl. Urip Sumoharjo No. 269, Makassar 90111
+                    </p>
+                    <p class="mb-2">
+                        <i class="bi bi-telephone-fill me-2"></i>(0411) 441111
+                    </p>
+                    <p class="mb-0">
+                        <i class="bi bi-envelope-fill me-2"></i>info@sulselprov.go.id
+                    </p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-3"><i class="bi bi-link me-2"></i>Tautan Cepat</h5>
+                    <div class="row">
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#home" onclick="showSection('home')" class="text-white text-decoration-none">Beranda</a></li>
+                                <li><a href="#profile" onclick="showSection('profile')" class="text-white text-decoration-none">Profil</a></li>
+                                <li><a href="#kontak" data-bs-toggle="modal" data-bs-target="#contactModal" class="text-white text-decoration-none">Kontak</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#ragam-info" onclick="showSection('ragam-info')" class="text-white text-decoration-none">Berita</a></li>
+                                <li><a href="#kabupaten" onclick="showSection('kabupaten')" class="text-white text-decoration-none">Daerah</a></li>
+                                <li><a href="#potensi" onclick="showSection('potensi')" class="text-white text-decoration-none">Potensi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3"><i class="bi bi-share me-2"></i>Terhubung dengan Kami</h5>
+                    <div class="d-flex gap-3 mb-3">
+                        <a href="#" class="text-white fs-4">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white fs-4">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                    </div>
+                    <p class="small text-light opacity-75 mb-0">
+                        Selalu pantau informasi terkini melalui media sosial resmi kami.
+                    </p>
+                </div>
+            </div>
+            <hr class="bg-light my-4">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">
+                        © 2024 Pemerintah Provinsi Sulawesi Selatan. Hak Cipta Dilindungi.
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">
+                        <span class="text-light opacity-75">Dikembangkan oleh:</span> 
+                        <strong>Tim Teknologi Informasi Sulsel</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-envelope me-2"></i>Hubungi Kami</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Pesan</label>
+                            <textarea class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals for Kabupaten/Kota Details with Tourist Destinations -->
+    
+    <!-- Makassar Modal -->
+    <div class="modal fade" id="makassarModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kota Makassar</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/download (1).jpg" class="img-fluid rounded" alt="Makassar">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Kota Makassar adalah ibu kota Provinsi Sulawesi Selatan yang merupakan kota terbesar di kawasan Indonesia Timur. Sebagai kota metropolitan, Makassar menjadi pusat pemerintahan, perdagangan, pendidikan, dan kebudayaan.</p>
+                            <p><strong>Luas Wilayah:</strong> 175.77 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 1.5 juta jiwa</p>
+                            <p><strong>Julukan:</strong> Kota Daeng, Kota Anging Mammiri</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Makassar
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Pantai Losari</h6>
+                                <p class="mb-1">Sunset terindah di Indonesia Timur dengan makanan laut segar.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka 24 jam</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Benteng Rotterdam</h6>
+                                <p class="mb-1">Benteng peninggalan Belanda dengan museum sejarah dan budaya.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 18:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Trans Studio Makassar</h6>
+                                <p class="mb-1">Theme park terbesar di Indonesia Timur dengan berbagai wahana seru.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 10:00 - 20:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Pulau Samalona</h6>
+                                <p class="mb-1">Pulau kecil dengan pantai putih dan spot snorkeling yang indah.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka setiap hari</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-3">
+                        <i class="bi bi-info-circle me-2"></i>
+                        <strong>Tips Wisata:</strong> Cobalah makanan khas Makassar seperti Coto Makassar, Konro, dan Es Pisang Ijo di sekitar Pantai Losari.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Palopo Modal -->
+    <div class="modal fade" id="palopoModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kota Palopo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/download (2).jpg" class="img-fluid rounded" alt="Palopo">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Kota Palopo adalah kota di kawasan pegunungan dengan udara sejuk dan panorama alam yang indah. Kota ini dikenal dengan kebudayaan Bugis-Luwu yang masih kental.</p>
+                            <p><strong>Luas Wilayah:</strong> 247.52 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 180 ribu jiwa</p>
+                            <p><strong>Julukan:</strong> Kota IDI (Ikan, Dodol, Intan)</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Palopo
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Pantai Bira</h6>
+                                <p class="mb-1">Pantai dengan pasir putih dan air laut yang jernih.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka 24 jam</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Masjid Jami Palopo</h6>
+                                <p class="mb-1">Masjid bersejarah peninggalan Kerajaan Luwu.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 04:00 - 22:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Bukit Tinco</h6>
+                                <p class="mb-1">Spot foto dengan panorama Kota Palopo dari ketinggian.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Terbaik saat pagi/sore</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Air Terjun Saluopa</h6>
+                                <p class="mb-1">Air terjun bertingkat dengan pemandangan alam yang asri.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 17:00 WITA</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Parepare Modal -->
+    <div class="modal fade" id="parepareModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kota Parepare</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/download (3).jpg" class="img-fluid rounded" alt="Parepare">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Kota Parepare adalah kota pelabuhan penting di pesisir barat Sulawesi Selatan dengan panorama Teluk Parepare yang indah. Kota ini merupakan tempat kelahiran Presiden ke-3 RI, B.J. Habibie.</p>
+                            <p><strong>Luas Wilayah:</strong> 99.33 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 150 ribu jiwa</p>
+                            <p><strong>Julukan:</strong> Kota Bandar Madani</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Parepare
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Pantai Lumpue</h6>
+                                <p class="mb-1">Pantai dengan pemandangan sunset yang indah di Teluk Parepare.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka 24 jam</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Monumen Perjuangan Rakyat</h6>
+                                <p class="mb-1">Monumen bersejarah dengan taman yang asri.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 18:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Wisata Bahari Pelabuhan</h6>
+                                <p class="mb-1">Melihat aktivitas pelabuhan dan kapal-kapal tradisional.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Terbaik pagi hari</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Museum Kota Parepare</h6>
+                                <p class="mb-1">Menyimpan sejarah dan budaya Kota Parepare.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 16:00 WITA</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bantaeng Modal -->
+    <div class="modal fade" id="bantaengModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kabupaten Bantaeng</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/download (4).jpg" class="img-fluid rounded" alt="Bantaeng">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Kabupaten Bantaeng dikenal sebagai daerah dengan pantai yang indah dan pertanian yang subur. Daerah ini juga memiliki situs arkeologi yang penting.</p>
+                            <p><strong>Luas Wilayah:</strong> 395.83 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 190 ribu jiwa</p>
+                            <p><strong>Julukan:</strong> Butta Toa (Negeri Tua)</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Bantaeng
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Pantai Seruni</h6>
+                                <p class="mb-1">Pantai berpasir putih dengan air laut biru yang jernih.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka 24 jam</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Gua Batu Ejaya</h6>
+                                <p class="mb-1">Gua alam dengan stalaktit dan stalagmit yang indah.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 17:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Situs Bonto-bontoa</h6>
+                                <p class="mb-1">Situs arkeologi dengan batu-batu megalitik kuno.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 16:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Air Terjun Bissapu</h6>
+                                <p class="mb-1">Air terjun dengan ketinggian sekitar 30 meter.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 17:00 WITA</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Barru Modal -->
+    <div class="modal fade" id="barruModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kabupaten Barru</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/download (5).jpg" class="img-fluid rounded" alt="Barru">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Kabupaten Barru adalah wilayah pesisir dengan potensi perikanan dan pariwisata bahari yang besar. Daerah ini dikenal dengan keindahan pantainya dan budaya maritimnya.</p>
+                            <p><strong>Luas Wilayah:</strong> 1.174 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 170 ribu jiwa</p>
+                            <p><strong>Julukan:</strong> Kota Teluk</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Barru
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Pantai Nirwana</h6>
+                                <p class="mb-1">Pantai dengan pasir putih dan air laut yang tenang.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka 24 jam</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Pulau Dutungan</h6>
+                                <p class="mb-1">Pulau kecil dengan terumbu karang yang indah.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka setiap hari</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Wisata Sejarah Benteng</h6>
+                                <p class="mb-1">Benteng peninggalan masa penjajahan.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 17:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Budidaya Rumput Laut</h6>
+                                <p class="mb-1">Eduwisata budidaya rumput laut tradisional.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Terbaik pagi hari</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bone Modal -->
+    <div class="modal fade" id="boneModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kabupaten Bone</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/images.jpg" class="img-fluid rounded" alt="Bone">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Kabupaten Bone dikenal sebagai lumbung padi Sulawesi Selatan dengan sawah terluas dan produksi beras tertinggi. Daerah ini memiliki sejarah Kerajaan Bone yang panjang.</p>
+                            <p><strong>Luas Wilayah:</strong> 4.559 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 850 ribu jiwa</p>
+                            <p><strong>Julukan:</strong> Bumi Arung Palakka</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Bone
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Museum La Pawawoi</h6>
+                                <p class="mb-1">Museum sejarah Kerajaan Bone dan budaya Bugis.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 16:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Makam Raja Bone</h6>
+                                <p class="mb-1">Kompleks makam raja-raja Bone di Watampone.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 18:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Wisata Persawahan</h6>
+                                <p class="mb-1">Pemandangan sawah hijau yang luas dan indah.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Terbaik saat musim tanam</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Pantai Pallette</h6>
+                                <p class="mb-1">Pantai dengan tebing karang yang unik.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka 24 jam</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bulukumba Modal -->
+    <div class="modal fade" id="bulukumbaModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kabupaten Bulukumba</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/bulukumba.jpg" class="img-fluid rounded" alt="Bulukumba">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Kabupaten Bulukumba terkenal sebagai pembuat kapal tradisional Phinisi yang terkenal hingga mancanegara. Daerah ini memiliki pantai yang indah dan budaya maritim yang kuat.</p>
+                            <p><strong>Luas Wilayah:</strong> 1.155 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 430 ribu jiwa</p>
+                            <p><strong>Julukan:</strong> Butta Panrita Lopi (Tanah Pembuat Kapal)</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Bulukumba
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Pantai Bira</h6>
+                                <p class="mb-1">Pantai dengan pasir putih halus dan air laut biru jernih.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka 24 jam</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Tana Beru</h6>
+                                <p class="mb-1">Desa pembuatan kapal Phinisi tradisional.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 17:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Pulau Liukang</h6>
+                                <p class="mb-1">Pulau kecil dengan keindahan bawah laut yang memukau.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Buka setiap hari</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Apparalang</h6>
+                                <p class="mb-1">Tebing karang dengan pemandangan laut yang spektakuler.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Terbaik saat matahari terbit</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tana Toraja Modal -->
+    <div class="modal fade" id="torajaModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title"><i class="bi bi-building me-2"></i>Kabupaten Tana Toraja</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <img src="images/toraja.jpg" class="img-fluid rounded" alt="Tana Toraja">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Profil Singkat</h5>
+                            <p>Tana Toraja adalah destinasi wisata budaya internasional yang terkenal dengan rumah adat Tongkonan, upacara Rambu Solo', dan pemakaman di tebing batu. Budaya Toraja yang unik menjadi daya tarik utama.</p>
+                            <p><strong>Luas Wilayah:</strong> 2.054 km²</p>
+                            <p><strong>Jumlah Penduduk:</strong> 280 ribu jiwa</p>
+                            <p><strong>Julukan:</strong> Londen van Celebes</p>
+                        </div>
+                    </div>
+                    
+                    <h5 class="border-bottom pb-2 mb-3">
+                        <i class="bi bi-camera me-2"></i>Destinasi Wisata di Tana Toraja
+                    </h5>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>1. Kete Kesu</h6>
+                                <p class="mb-1">Desa adat dengan rumah Tongkonan dan lumbung padi tradisional.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 18:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>2. Londa</h6>
+                                <p class="mb-1">Kuburan tebing dengan tau-tau (patung) yang terkenal.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> 08:00 - 17:00 WITA</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>3. Batutumonga</h6>
+                                <p class="mb-1">Puncak dengan pemandangan lembah dan kabut yang indah.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Terbaik pagi hari</small>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="tourist-spot">
+                                <h6>4. Upacara Rambu Solo'</h6>
+                                <p class="mb-1">Upacara adat kematian yang sangat megah dan unik.</p>
+                                <small class="text-muted"><i class="bi bi-clock"></i> Berdasarkan kalender adat</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alert alert-info mt-3">
+                        <i class="bi bi-info-circle me-2"></i>
+                        <strong>Tips Wisata:</strong> Kunjungi Tana Toraja pada bulan Juni-Agustus untuk menyaksikan berbagai upacara adat. Jangan lupa mencoba kopi Toraja yang terkenal.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tambahkan modal-modal lainnya dengan pola yang sama -->
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Simple JavaScript for section switching -->
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show selected section
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Update active nav link
+            document.querySelectorAll('.sidebar .nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + sectionId) {
+                    link.classList.add('active');
+                }
+            });
+            
+            // Update navbar active link
+            document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + sectionId) {
+                    link.classList.add('active');
+                }
+            });
+            
+            return false;
+        }
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show home section by default
+            showSection('home');
+            
+            // Initialize Bootstrap tooltips
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            });
+        });
+    </script>
+</body>
+</html>
